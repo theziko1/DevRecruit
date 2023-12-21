@@ -7,29 +7,29 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="w-[39px] h-[43px] ml-[200px]">
+      <div className="w-[39px] h-[43px] hidden md:inline ml-[200px]">
         <img src={Abstract} alt="" />
       </div>
-      <div className="w-[60%] h-[100px] pl-5 pr-[30px] py-3.5 bg-neutral-50 rounded-[11px] border border-zinc-100 justify-center items-center gap-2.5 inline-flex">
-        <div className="p-3.5 rounded-md bg-gray-100 justify-center items-center gap-2.5 flex">
+      <div className="md:w-[60%] inline w-full mx-auto h-[100px] pl-5 pr-[30px] py-3.5  lg:bg-neutral-50 rounded-[11px] border border-zinc-100 justify-center items-center gap-2.5 md:inline-flex">
+        <div className="p-3.5 rounded-md  bg-gray-100 justify-center items-center gap-2.5 inline-flex">
           <img src={Icon} alt="" />
         </div>
         <div className="text-center">
-          <span className="text-indigo-400 text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
+          <span className="text-indigo-400 text-xl md:text-2xl lg:text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
             Explore
           </span>
-          <span className="text-zinc-900 text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
+          <span className="text-zinc-900 text-xl md:text-2xl lg:text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
             {" "}
           </span>
-          <span className="text-indigo-900 text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
+          <span className="text-indigo-900 text-xl md:text-2xl lg:text-3xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
             Boundless Opportunities{" "}
           </span>
         </div>
       </div>
-      <h1 className="w-[100%] text-center text-indigo-900 py-3 text-[38px] font-medium font-['Be Vietnam Pro']">
+      <h1 className="w-[100%] text-center text-indigo-900 py-3 text-xl md:text-2xl lg:text-3xl font-medium font-['Be Vietnam Pro']">
         Welcome to DevRecruits: Where Innovation Meets Talent!
       </h1>
-      <p className="w-[100%] text-center text-indigo-900 py-3 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">
+      <p className="w-[100%] md:text-center text-indigo-900 py-3 text-justify text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">
         Are you ready to embark on a coding adventure? DevRecruits is your
         gateway to a world of possibilities, connecting visionary developers
         with companies that are shaping the future. Join us and let's build the
@@ -82,8 +82,8 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="w-[90%] h-[200px]- my-8 mx-auto  justify-center items-center gap-[300px] flex">
-        <div className="w-[1177px] flex-col justify-start items-start gap-1.5 flex">
+      <section className="w-[90%] h-[200px] inline my-8 mx-auto  justify-center items-center gap-[300px] lg:flex">
+        <div className="md:w-[1177px] lg:w-fit  flex-col justify-start items-start gap-1.5 flex">
           <h1 className=" text-indigo-900 text-5xl font-semibold font-['Be Vietnam Pro'] leading-[72px]">
             Our Quizzes
           </h1>
@@ -101,7 +101,7 @@ const Home = () => {
         </div>
       </section>
 
-<main className="grid grid-cols-2 gap-4" >
+<main className="grid grid-cols-1 md:grid-cols-2 gap-4" >
  
   <div className="w-[100%] h-[807px] p-[50px] bg-white rounded-xl border border-zinc-100 flex-col justify-between items-start gap-7 inline-flex">
         
@@ -121,7 +121,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">Web Design Fundamentals</div>
-        <div className="self-stretch text-indigo-900 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
         </div>
         </div>
         </div>
@@ -148,7 +148,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">Web Design Fundamentals</div>
-        <div className="self-stretch text-indigo-900 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
         </div>
         </div>
         </div>
@@ -175,7 +175,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">Web Design Fundamentals</div>
-        <div className="self-stretch text-indigo-900 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
         </div>
         </div>
         </div>
@@ -202,7 +202,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">Web Design Fundamentals</div>
-        <div className="self-stretch text-indigo-900 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
         </div>
         </div>
         </div>
@@ -215,14 +215,14 @@ const Home = () => {
      
 
 
-      <div className="w-[100%] h-[1221px] p-[100px] mt-[100px] bg-white rounded-xl justify-start items-start gap-[120px] flex">
-    <div className="w-[408px] flex-col justify-start items-start gap-[50px] inline-flex">
+      <div className="w-[100%] md:h-[1221px] h-[1800px] p-[100px] mt-[100px] block bg-white rounded-xl justify-start items-start gap-[200px]md:gap-[120px] lg:flex">
+    <div className="md:w-[408px]  w-full inline flex-col justify-start items-start gap-[50px] lg:flex">
         <div className="self-stretch h-[153px] flex-col justify-start items-start gap-2.5 flex">
-            <div className="self-stretch text-indigo-900 text-5xl text-left font-semibold font-['Be Vietnam Pro'] leading-[57.60px]">Frequently Asked Questions</div>
-            <div className="self-stretch text-indigo-900 text-lg text-left font-normal font-['Be Vietnam Pro'] leading-[27px]">Your DevRecruits Queries Answered</div>
+            <div className="self-stretch text-indigo-900 text-2xl md:text-5xl md:text-left text-center font-semibold font-['Be Vietnam Pro'] leading-[57.60px]">Frequently Asked Questions</div>
+            <div className="self-stretch text-indigo-900 text-lg text-center md:text-left font-normal font-['Be Vietnam Pro'] leading-[27px]">Your DevRecruits Queries Answered</div>
         </div>
-        <div className="px-6 py-[18px] bg-amber-500 rounded-lg border border-zinc-100 justify-center items-center gap-2 inline-flex">
-            <div className="text-center text-gray-100 text-lg font-medium font-['Be Vietnam Pro'] leading-[27px]">Contact Us For More Questions</div>
+        <div className="px-6 md:py-[18px] py-6 bg-amber-500 rounded-lg border border-zinc-100 justify-center items-center gap-2 inline-flex">
+            <div className="text-center text-gray-100 text-base md:text-lg font-medium font-['Be Vietnam Pro'] leading-[27px]">Contact Us For More Questions</div>
         </div>
     </div>
     <div className="grow shrink basis-0 flex-col justify-start items-start gap-[30px] inline-flex">
