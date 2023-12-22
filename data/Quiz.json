@@ -1,0 +1,195 @@
+{
+  "FrontEndQuiz": [
+    {
+      "id": 1,
+      "nom": "Quel langage est principalement utilisé pour le développement frontend ?",
+      "suggestions":["Java","Python","JavaScript","Ruby"],
+      "answer" : "Javascript"
+    },
+    {
+      "id": 2,
+      "nom": "Qu'est-ce que CSS ?",
+      "suggestions":["Computer Style Sheets","Central Style Sheets","Cascading Style Sheets","Creative Style Sheets"],
+      "answer" : "Cascading Style Sheets"
+    },
+    {
+      "id": 3,
+      "nom": " Quelle bibliothèque JavaScript est souvent utilisée pour construire des interfaces utilisateur interactives ?",
+      "suggestions":["jQuery","React","Angular","Vue.js"],
+      "answer" : "React"
+    },
+    {
+      "id": 4,
+      "nom": "Quel outil est couramment utilisé pour gérer les dépendances dans un projet frontend ?",
+      "suggestions":["npm (Node Package Manager)","Pipenv","Maven","Gradle"],
+      "answer" : "npm (Node Package Manager)"
+    },
+    {
+      "id": 5,
+      "nom": " Quelle méthode est utilisée pour faire des requêtes asynchrones en JavaScript ?",
+      "suggestions":["sync()","await()","request()","async()"],
+      "answer" : "async()"
+
+    },
+    {
+      "id": 6,
+      "nom": "Quel format de données est généralement utilisé pour échanger des informations entre le frontend et le backend ?",
+      "suggestions":["XML","JSON","YAML","HTML"],
+      "answer" : "JSON"
+
+    },
+    {
+      "id": 7,
+      "nom": "Quelle balise HTML est utilisée pour créer un lien hypertexte ? ",
+      "suggestions":["<link>","<a>","<url>","<href>"],
+      "answer" : "<a>"
+    },
+    {
+      "id": 8,
+      "nom": "Quelle méthode HTTP est utilisée pour récupérer des données du serveur dans une requête AJAX en JavaScript ?",
+      "suggestions":["POST","GET","FETCH","UPDATE"],
+      "answer" : "GET"
+    },
+    {
+      "id": 9,
+      "nom": "Quel préprocesseur CSS permet l'utilisation de variables et de fonctions ?",
+      "suggestions":["SASS","LESS","Stylus","CSSnext"],
+      "answer" : "SASS"
+
+    },
+    {
+      "id": 10,
+      "nom": " Quel concept de JavaScript est utilisé pour traiter des actions après un certain délai ?",
+      "suggestions":["Callbacks","Promises","Intervals","Timeouts"],
+      "answer" : "Timeouts"
+    }
+    
+  ],
+  "BackEndQuiz": [
+    {
+      "id": 1,
+      "nom": "Quel langage est principalement utilisé pour le développement backend ?",
+      "suggestions": ["JavaScript", "Python", "Java", "C#"],
+      "answer": "Python"
+    },
+    {
+      "id": 2,
+      "nom": "Quel framework est souvent utilisé avec le langage de programmation JavaScript pour le développement backend ?",
+      "suggestions": ["Django", "Express.js", "Flask", "Ruby on Rails"],
+      "answer": "Express.js"
+    },
+    {
+      "id": 3,
+      "nom": "Qu'est-ce que SQL ?",
+      "suggestions": ["Structured Language", "Sequential Language", "Structured Query Language", "Simple Query Language"],
+      "answer": "Structured Query Language"
+    },
+    {
+      "id": 4,
+      "nom": "Quel est le rôle d'un ORM dans le développement backend ?",
+      "suggestions": ["Object-Relational Mapping", "Object-Resource Model", "Object-Role Modeling", "Object-Reliability Mechanism"],
+      "answer": "Object-Relational Mapping"
+    },
+    {
+      "id": 5,
+      "nom": "Quel est le principal avantage de l'utilisation de JWT (JSON Web Tokens) dans l'authentification ?",
+      "suggestions": ["Facilité d'utilisation", "Sécurité renforcée", "Compatibilité avec tous les navigateurs", "Plus grande vitesse d'authentification"],
+      "answer": "Sécurité renforcée"
+    },
+    {
+      "id": 6,
+      "nom": "Quelle méthode HTTP est utilisée pour récupérer des données du serveur dans une API REST ?",
+      "suggestions": ["POST", "GET", "PUT", "DELETE"],
+      "answer": "GET"
+    },
+    {
+      "id": 7,
+      "nom": "Quel est le format de données couramment utilisé pour échanger des informations entre le frontend et le backend ?",
+      "suggestions": ["XML", "JSON", "YAML", "HTML"],
+      "answer": "JSON"
+    },
+    {
+      "id": 8,
+      "nom": "Quelle base de données est souvent utilisée pour des applications nécessitant une évolutivité horizontale ?",
+      "suggestions": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+      "answer": "MongoDB"
+    },
+    {
+      "id": 9,
+      "nom": "Quel est le principe du modèle REST (Representational State Transfer) ?",
+      "suggestions": ["Stateful", "Stateless", "Static", "Dynamic"],
+      "answer": "Stateless"
+    },
+    {
+      "id": 10,
+      "nom": "Quel langage de programmation est souvent associé à la création de scripts côté serveur dans le développement web ?",
+      "suggestions": ["JavaScript", "Python", "Ruby", "PHP"],
+      "answer": "PHP"
+    }
+  ],
+  "FullStackQuiz" : [
+    {
+      "id": 1,
+      "nom": "Quel langage de programmation est souvent utilisé côté serveur (backend) avec le framework Express.js ?",
+      "suggestions": ["JavaScript", "Python", "Java", "Ruby"],
+      "answer": "JavaScript"
+    },
+    {
+      "id": 2,
+      "nom": "Quelle technologie est utilisée pour la gestion des dépendances dans un projet JavaScript côté serveur ?",
+      "suggestions": ["npm", "Pipenv", "Maven", "Gradle"],
+      "answer": "npm"
+    },
+    {
+      "id": 3,
+      "nom": "Quel protocole est généralement utilisé pour la communication entre le frontend et le backend dans une application web moderne ?",
+      "suggestions": ["FTP", "HTTP/HTTPS", "SSH", "SMTP"],
+      "answer": "HTTP/HTTPS"
+    },
+    {
+      "id": 4,
+      "nom": "Qu'est-ce qu'un middleware dans le contexte du développement backend avec Express.js ?",
+      "suggestions": ["Un logiciel antivirus", "Une fonction intermédiaire", "Un système de gestion de base de données", "Un framework CSS"],
+      "answer": "Une fonction intermédiaire"
+    },
+    {
+      "id": 5,
+      "nom": "Quel est le rôle de WebSockets dans le développement fullstack ?",
+      "suggestions": ["Manipulation flexible des données", "Communication en temps réel", "Requêtes uniques", "Réponses statiques"],
+      "answer": "Communication en temps réel"
+    },
+    {
+      "id": 6,
+      "nom": "Quel langage de programmation est souvent utilisé pour les scripts côté serveur dans le développement web ?",
+      "suggestions": ["JavaScript", "Python", "Ruby", "PHP"],
+      "answer": "PHP"
+    },
+    {
+      "id": 7,
+      "nom": "Quel modèle architectural est souvent associé au développement backend avec Express.js ?",
+      "suggestions": ["MVC (Model-View-Controller)", "MVVM (Model-View-ViewModel)", "Observer", "Singleton"],
+      "answer": "MVC (Model-View-Controller)"
+    },
+    {
+      "id": 8,
+      "nom": "Quelle méthode HTTP est généralement utilisée pour mettre à jour une ressource côté serveur dans une API REST ?",
+      "suggestions": ["POST", "GET", "PUT", "PATCH"],
+      "answer": "PUT"
+    },
+    {
+      "id": 9,
+      "nom": "Qu'est-ce que CORS (Cross-Origin Resource Sharing) dans le contexte du développement web ?",
+      "suggestions": ["Un langage de programmation", "Un protocole de sécurité", "Une politique de même origine", "Une norme pour le partage des ressources entre domaines"],
+      "answer": "Une norme pour le partage des ressources entre domaines"
+    },
+    {
+      "id": 10,
+      "nom": "Quel outil est utilisé pour déployer une application fullstack sur des serveurs cloud tels que AWS ou Heroku ?",
+      "suggestions": ["Docker", "Git", "npm", "Webpack"],
+      "answer": "Docker"
+    }
+  ]
+  
+  
+  
+}

@@ -28,7 +28,7 @@ const Navbar = () => {
                         }
                      </button>
            </div>
-           <div className={`${isMenuOpen ? "top-[100px] left-0 right-0  block bg-orange-600" : "hidden"}`}>
+           <div className={`${isMenuOpen ? "fixed top-[100px] left-0 right-0  block bg-orange-400" : "hidden"}`}>
               <NavLink to="/" className="block text-neutral-800 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Home</NavLink>
               <NavLink to="/Quiz" className="block text-neutral-800 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Quiz</NavLink>
               <NavLink to="/Contact" className="block text-neutral-800 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Contact</NavLink>
