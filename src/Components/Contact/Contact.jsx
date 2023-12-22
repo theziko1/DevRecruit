@@ -8,16 +8,17 @@ const Contact = () => {
     <>
     <Navbar/>
     <div>
-      <div className="inline  items-center md:flex gap-10 pb-50 pl-132 pr-132 border-b-2 border-solid bt-5 border-gray-300">
+      <div className="inline  items-center md:flex gap-10 pb-50 pl-132 pr-132 border-b-2 bt-2 pb-10 border-slate-200">
         <div className="flex-1 text-indigo-800 text-4xl font-semibold leading-72 break-words">
             Contact Us
         </div>
-        <div className="flex-1 md:mb-0 mb-[100px] text-indigo-800 text-base font-normal leading-27 break-words">
-            Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.
+        <div className="flex-1 md:mb-0 mb-[200px] text-indigo-800 text-base font-normal leading-27 break-words">
+            Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions,
+            we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.
         </div>
       </div>
       {/* form */}
-      <div class="flex items-center justify-center min-h-screen bg-gray-100">
+      <div class="flex items-center mt-[50px] justify-center min-h-screen bg-gray-100">
       <div class="w-full max-w-4xl p-10 bg-white mt-5 mb-5 rounded-lg shadow-lg">
         <h1 class="text-4xl font-semibold text-indigo-800 mb-20">Contact Us</h1>
 

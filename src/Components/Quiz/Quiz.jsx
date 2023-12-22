@@ -4,6 +4,7 @@ import { IoPlaySharp } from "react-icons/io5";
 import ModalFront from '../Modal/ModalFront';
 import ModalBack from '../Modal/ModalBack';
 import ModalFull from "../Modal/ModalFull";
+import Footer from '../Footer/Footer';
 
 const Quiz = () => {
    
@@ -89,14 +90,10 @@ const Quiz = () => {
     </div>
 </div>
 
-
-    
     <ModalFront onClose={handleOnClose} visible={showModal}/>
     <ModalBack onClose={handleOnCloseBack} visible={showModalBack}/> 
     <ModalFull onClose={handleOnCloseFull} visible={showModalFull}/> 
-
-
-   
+<Footer/>
     </>
   )
 }

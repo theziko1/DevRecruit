@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Icon from "../../assets/HomeImage/Icon.svg";
+import simplon from "../../assets/sliderimages/simplon.png";
+import jobintech from "../../assets/sliderimages/jobintech.png";
 import Abstract from "../../assets/HomeImage/Abstract.svg";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
@@ -30,7 +32,7 @@ const Home = () => {
       <h1 className="w-[100%] text-center text-indigo-900 py-3 text-xl md:text-2xl lg:text-3xl font-medium font-['Be Vietnam Pro']">
         Welcome to DevRecruits: Where Innovation Meets Talent!
       </h1>
-      <p className="w-[100%] md:text-center text-indigo-900 py-3 text-justify text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">
+      <p className="w-[100%] md:text-center text-indigo-900 py-3 mb-5 text-justify text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">
         Are you ready to embark on a coding adventure? DevRecruits is your
         gateway to a world of possibilities, connecting visionary developers
         with companies that are shaping the future. Join us and let's build the
@@ -56,31 +58,13 @@ const Home = () => {
       <div className="w-[90%] h-[154px] p-[30px] mt-[50px] bg-neutral-50 rounded-xl border border-zinc-100 justify-start items-start inline-flex">
         <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
           <div className="w-[68px] h-[34px] relative" />
+          <img className="w-[150px] h-[70px]" src={jobintech}/>
         </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
         <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
           <div className="w-[99.17px] h-[34px] relative" />
+          <img className="w-[150px] h-[50px]" src={simplon}/>
         </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
-        <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[69.42px] h-[34px] relative" />
-        </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
-        <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[77.92px] h-[34px] relative" />
-        </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
-        <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[94.21px] h-[34px] relative" />
-        </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
-        <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[91.38px] h-[34px] relative" />
-        </div>
-        <div className="w-[94px] self-stretch origin-top-left rotate-90 border border-zinc-100"></div>
-        <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[78.62px] h-[34px] relative" />
-        </div>
+        
       </div>
 
       <section className="w-[90%] h-[200px] inline my-8 mx-auto  justify-center items-center gap-[300px] lg:flex">
@@ -95,7 +79,7 @@ const Home = () => {
             with opportunities that align with your strengths.
           </p>
         </div>
-        <div className="w-[120px] h-[63px] px-6 py-[18px] bg-neutral-50 rounded-lg border border-zinc-100 justify-center items-center gap-2 flex">
+        <div className="w-[200px] h-[63px] px-6 py-[18px] bg-neutral-50 rounded-lg border border-zinc-100 justify-center items-center gap-2 flex">
           <div className="text-center text-indigo-900 text-lg font-medium font-['Be Vietnam Pro'] leading-[27px]">
             View All
           </div>
