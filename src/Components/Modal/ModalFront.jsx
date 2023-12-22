@@ -31,9 +31,9 @@ const ModalFront = ({visible , onClose}) => {
     if (!visible) return null
   return (
     <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
-      <div className="bg-white p-2 rounded w-[60%]">
-        <h1>Welcome to Test</h1>
-        <h4 key={data[currentItemIndex].id}>{data[currentItemIndex].nom}</h4>  
+      <div className="bg-white p-8 rounded w-[80%]">
+        <h1 className="text-orange-400 text-lg font-bold">Welcome to FrontEnd Quiz</h1>
+        <h4 className="text-indigo-600 font-normal" key={data[currentItemIndex].id}>{data[currentItemIndex].nom}</h4>  
         <ul>
           {data[currentItemIndex].suggestions.map((suggestion, index) => (
           <div>
