@@ -7,8 +7,6 @@ import { FaXmark , FaBars } from "react-icons/fa6";
 const Navbar = () => {
   const [isMenuOpen,setIsMenuOpen] = useState(false);
   
-
-
   const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
   }
