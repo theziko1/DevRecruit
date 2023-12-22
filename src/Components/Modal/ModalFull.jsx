@@ -4,6 +4,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 const ModalFull = ({onClose,visible}) => {
     const [data, setData] = useState([]);
     const [currentItemIndex, setCurrentItemIndex] = useState(0);
+    const [showAnswer, setShowAnswer] = useState(false);
+    const [userAnswers, setUserAnswers] = useState([]);
+    const [score, setScore] = useState(0);
+    const [timer, setTimer] = useState(25); 
       
       useEffect(() => {
         const fetchData = async () => {
@@ -28,28 +32,115 @@ const ModalFull = ({onClose,visible}) => {
     
         return () => clearTimeout(timer);
       }, [currentItemIndex, data]);
+
+      const handleOptionClick = (selectedOption) => {
+     
+        if (!showAnswer) {
+          
+          const isCorrect = selectedOption === data[currentItemIndex].answer;
+    
+          setUserAnswers(prevAnswers => [...prevAnswers, { questionId: currentItemIndex + 1, isCorrect }]);
+          setScore(prevScore => (isCorrect ? prevScore + 1 : prevScore));
+    
+          setShowAnswer(true);
+    
+          
+        }
+      };
+    
+      const handleNextQuestion = () => {
+        setShowAnswer(false);
+        setCurrentItemIndex(prevIndex => (prevIndex + 1) % data.length);
+        setTimer(25);
+        
+  
+      };
+    
+      useEffect(() => {
+        
+        setScore(0);
+        setUserAnswers([]);
+      }, [data]);
+
+
+      useEffect(() => {
+        let countdown;
+    
+        if (timer > 0 && !showAnswer) {
+          countdown = setInterval(() => {
+            setTimer(prevTimer => prevTimer - 1);
+          }, 1000);
+        } else if (timer === 0 && !showAnswer) {
+          // Passe automatiquement à la question suivante lorsque le temps est écoulé
+          handleNextQuestion();
+        }
+    
+        // Nettoie l'intervalle lorsque le composant est démonté ou lorsque le timer est à zéro
+        return () => clearInterval(countdown);
+      }, [timer, showAnswer]);
+    
+      const currentQuestion = data[currentItemIndex];
+
       if (!visible) return null
     return (
       <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
-        <div className="bg-white p-2 rounded w-[60%]">
-          <h1 className="">Welcome to FullStack Quiz</h1>
-          <span>Question N°{data[currentItemIndex].id}</span>
-          <h4 key={data[currentItemIndex].id}>{data[currentItemIndex].nom}</h4>  
+      <div className="bg-white p-8 rounded w-[80%]">
+      
+        <h1 className="text-orange-400 text-lg font-bold">Welcome to FullStack Quiz</h1>
+        
+    
+        <div>
+        {(showAnswer  && currentItemIndex   !== data.length - 1 ) && (
+        <p>La réponse correcte est : {currentQuestion.answer}</p>
+      )}
+
+      {!showAnswer && (
+        <ul>
+          <p>Temps restant : {timer} secondes</p>
+        <span className="text-indigo-400">Question N°{data[currentItemIndex].id}</span>
+        <h4 className="text-indigo-600 font-normal" key={data[currentItemIndex].id}>{data[currentItemIndex].nom}</h4> 
+          {currentQuestion.suggestions.map((suggestion, index) => (
+            <li key={index} onClick={() => handleOptionClick(suggestion)}>
+              {suggestion}
+            </li>
+            
+          ))}
+          
+        </ul>
+      )}
+
+      {showAnswer && currentItemIndex < data.length - 1 && (
+        <button onClick={handleNextQuestion}>Question suivante</button>
+      )}
+
+      {(currentItemIndex   === data.length -1 && showAnswer ) && (
+        <div>
+          <p>Score final : {score} / {data.length}</p>
           <ul>
-            {data[currentItemIndex].suggestions.map((suggestion, index) => (
-            <div key={index}>
-            <input type="radio" name=""  />            
-              <label >
-                {suggestion}
-              </label>
-            </div>
+            {userAnswers.map((answer, index) => (
+              <li key={index}>
+                Question {answer.questionId}: {answer.isCorrect ? 'Correct' : 'Incorrect'}
+              </li>
             ))}
           </ul>
          
-          <button onClick={onClose}><AiFillCloseCircle /></button>
         </div>
-        
+      )}
+
+       
+    
+       </div>
+       
+        <button onClick={()=>{
+          setCurrentItemIndex(0)
+          setUserAnswers([])
+          setShowAnswer(false)
+          setTimer(25)
+          onClose()
+        }}><AiFillCloseCircle /></button>
       </div>
+      
+    </div>
   )
 }
 
