@@ -24,15 +24,15 @@ const ModalFront = ({visible , onClose}) => {
       
   }, [])
 
-  useEffect(() => {
+  // useEffect(() => {
     
-      const timer = setTimeout(() => {
-        setCurrentItemIndex(prevIndex => (prevIndex + 1) % data.length);
-      }, 25000);
+  //   //   const timer = setTimeout(() => {
+  //   //     setCurrentItemIndex(prevIndex => (prevIndex + 1) % data.length);
+  //   //   }, 25000);
       
   
-      return () => clearTimeout(timer);
-    }, [currentItemIndex, data]);
+  //   //   return () => clearTimeout(timer);
+  //   // }, [currentItemIndex, data]);
    
     const handleOptionClick = (selectedOption) => {
      
@@ -90,7 +90,7 @@ const ModalFront = ({visible , onClose}) => {
     <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
       <div className="bg-white p-8 rounded w-[80%]">
       
-        <h1 className="text-orange-400 text-lg font-bold">Welcome to FrontEnd Quiz</h1>
+        <h1 className="text-orange-400 text-lg font-bold">Welcome to FrontEnd Quiz </h1>
         
     
         <div>
@@ -122,7 +122,7 @@ const ModalFront = ({visible , onClose}) => {
           <p className="bg-lime-400 text-white p-2 m-2">Score final : {score} / {data.length}</p>
           <ul>
             {userAnswers.map((answer, index) => (
-              <li className="bg-indigo-400 text-white " key={index}>
+              <li className="bg-indigo-400 text-white" key={index}>
                 Question {answer.questionId}: {answer.isCorrect ? 'Correct' : 'Incorrect'}
               </li>
             ))}

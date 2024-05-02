@@ -59,11 +59,11 @@ const Home = () => {
       </Link>
       <div className="w-[90%] h-[154px] p-[30px] mt-[50px] bg-neutral-50 rounded-xl border border-zinc-100 justify-start items-start inline-flex">
         <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[68px] h-[34px] relative" />
+          
           <img className="w-[150px] h-[70px]" src={jobintech}/>
         </div>
         <div className="grow shrink basis-0 h-[94px] px-10 py-[30px] justify-center items-center gap-[30px] flex">
-          <div className="w-[99.17px] h-[34px] relative" />
+          
           <img className="w-[150px] h-[50px]" src={simplon}/>
         </div>
         
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-<main className="grid grid-cols-1 gap-4" >
+<main className="grid grid-cols-1 md:grid-cols-3 gap-4" >
  
   <div className="w-[100%] h-[807px] p-[50px] bg-white rounded-xl border border-zinc-100 flex-col justify-between items-start gap-7 inline-flex">
         
@@ -108,7 +108,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">FrontEnd Quiz</div>
-        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <p className="self-stretch text-indigo-900 md:text-base text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
         </div>
         </div>
         </div>
@@ -135,7 +135,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">BackEnd Quiz</div>
-        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <p className="self-stretch text-indigo-900 md:text-base text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
         </div>
         </div>
         </div>
@@ -162,7 +162,7 @@ const Home = () => {
         </div>
         <div className="self-stretch h-[131px] flex-col justify-start items-start gap-3.5 flex">
         <div className="self-stretch text-indigo-900 text-2xl font-semibold font-['Be Vietnam Pro'] leading-9">FullStack Quiz</div>
-        <div className="self-stretch text-indigo-900 md:text-lg text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</div>
+        <p className="self-stretch text-indigo-900 md:text-base text-xs font-normal font-['Be Vietnam Pro'] leading-[27px]">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
         </div>
         </div>
         </div>

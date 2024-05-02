@@ -24,14 +24,14 @@ const ModalBack = ({onClose,visible}) => {
       
   }, [])
 
-  useEffect(() => {
+  // useEffect(() => {
     
-      const timer = setTimeout(() => {
-        setCurrentItemIndex(prevIndex => (prevIndex + 1) % data.length);
-      }, 25000);
+  //     const timer = setTimeout(() => {
+  //       setCurrentItemIndex(prevIndex => (prevIndex + 1) % data.length);
+  //     }, 25000);
   
-      return () => clearTimeout(timer);
-    }, [currentItemIndex, data]);
+  //     return () => clearTimeout(timer);
+  //   }, [currentItemIndex, data]);
 
     const handleOptionClick = (selectedOption) => {
      
@@ -91,16 +91,16 @@ const ModalBack = ({onClose,visible}) => {
     
         <div>
         {(showAnswer  && currentItemIndex   !== data.length - 1 ) && (
-        <p>La réponse correcte est : {currentQuestion.answer}</p>
+        <p className="text-lime-600">La réponse correcte est : {currentQuestion.answer}</p>
       )}
 
       {!showAnswer && (
         <ul>
-          <p>Temps restant : {timer} secondes</p>
+          <p className="text-red-400">Temps restant : {timer} secondes</p>
         <span className="text-indigo-400">Question N°{data[currentItemIndex].id}</span>
         <h4 className="text-indigo-600 font-normal" key={data[currentItemIndex].id}>{data[currentItemIndex].nom}</h4> 
           {currentQuestion.suggestions.map((suggestion, index) => (
-            <li key={index} onClick={() => handleOptionClick(suggestion)}>
+            <li className="cursor-pointer bg-orange-400 p-2 m-2 text-white" key={index} onClick={() => handleOptionClick(suggestion)}>
               {suggestion}
             </li>
             
@@ -110,15 +110,15 @@ const ModalBack = ({onClose,visible}) => {
       )}
 
       {showAnswer && currentItemIndex < data.length - 1 && (
-        <button onClick={handleNextQuestion}>Question suivante</button>
+        <button className="bg-indigo-400 text-white p-2 m-2 rounded-md" onClick={handleNextQuestion}>Question suivante</button>
       )}
 
       {(currentItemIndex   === data.length -1 && showAnswer ) && (
         <div>
-          <p>Score final : {score} / {data.length}</p>
+          <p className="bg-lime-400 text-white p-2 m-2">Score final : {score} / {data.length}</p>
           <ul>
             {userAnswers.map((answer, index) => (
-              <li key={index}>
+              <li className="bg-indigo-400 text-white" key={index}>
                 Question {answer.questionId}: {answer.isCorrect ? 'Correct' : 'Incorrect'}
               </li>
             ))}
