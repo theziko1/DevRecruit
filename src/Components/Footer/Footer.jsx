@@ -22,11 +22,11 @@ const Footer = () => {
             <div className=''>
                 <div className='flex items-center mb-2 text-l'>
                     <IoIosMail className='text-saturatedOrange text-linkColor mr-2' />
-                    <p className='text-left text-darkBlue'>hello@skillbridge.com</p>
+                    <p className='text-left text-darkBlue'>zakariaghachim96@gmail.com</p>
                 </div>
                 <div className='flex items-center mb-2 text-l'>
                     <FaPhoneAlt className='text-saturatedOrange text-linkColor mr-2' />
-                    <p className='text-left text-darkBlue'>+212 5889525</p>
+                    <p className='text-left text-darkBlue'>+212613428019</p>
                 </div>
                 <div className='flex items-center mb-2 text-l'>
                     <FaLocationDot className='text-saturatedOrange text-linkColor mr-2' />
