@@ -1,6 +1,7 @@
 import React  , {useState , useEffect} from 'react'
 import { AiFillCloseCircle } from "react-icons/ai";
 
+
 const ModalBack = ({onClose,visible}) => {
     const [data, setData] = useState([]);
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
@@ -8,11 +9,12 @@ const ModalBack = ({onClose,visible}) => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [score, setScore] = useState(0);
   const [timer, setTimer] = useState(25); 
+  const URL = import.meta.env.VITE_URL;
     
     useEffect(() => {
       const fetchData = async () => {
           try {
-            const response = await fetch('https://dev-recruit.vercel.app/BackEndQuiz');
+            const response = await fetch(`${URL}/BackEndQuiz`);
             const jsonData = await response.json();
             setData(jsonData);
           } catch (error) {
