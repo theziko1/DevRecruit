@@ -11,8 +11,8 @@ const Navbar = () => {
       setIsMenuOpen(!isMenuOpen);
   }
   return (
-  <div className="w-[100%] h-[99px] px-[132px] border-b border-zinc-100 justify-between items-start flex">
-        <div className="justify-start items-center gap-[50px]  flex">
+  <div className="w-[100%] h-[50px] px-[132px] border-b border-zinc-100 justify-between items-center flex">
+        <div className="justify-end items-center gap-[150px]  flex">
                   <img className="w-[150px] h-[58.85px]" src={Logo} />
           <div className="justify-start items-center gap-[26px] md:flex hidden">
               <NavLink to="/" className="text-neutral-800 text-lg font-normal font-['Be Vietnam Pro'] leading-[27px]">Home</NavLink>

@@ -12,7 +12,7 @@ const ModalFull = ({onClose,visible}) => {
       useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await fetch('http://localhost:3000/FullStackQuiz');
+              const response = await fetch('https://dev-recruit.vercel.app/FullStackQuiz');
               const jsonData = await response.json();
               setData(jsonData);
             } catch (error) {

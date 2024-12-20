@@ -12,7 +12,7 @@ const ModalFront = ({visible , onClose}) => {
     useEffect(() => {
       const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3000/FrontEndQuiz');
+            const response = await fetch('https://dev-recruit.vercel.app/FrontEndQuiz');
             const jsonData = await response.json();
             setData(jsonData);
           } catch (error) {
